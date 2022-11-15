@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tooltip</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="test.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sono:wght@800&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="card">
+    <div class="card_img">
+        <img src="KvsC2.jpg" alt="">  
+    </div>
+    <h1>|____________|</h1>
+    <h1>Khoa ♥ Chau</h1>
+    <div class="card__social">
+        <div class="icon facebook">
+        <a target="_black" href="https://www.facebook.com/anhkhoa.luong.9849">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a target="_black" href="https://www.facebook.com/profile.php?id=100080622848596">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+            <span class="tooltip">Facebook</span>
+        </div>
+      </div>
+    </div>
+</div>
+
+<div class="card">
+    <div class="card_img">
+        <img src="CvsA1.jpg" alt="">  
+    </div>
+    <h1>|____________|</h1>
+    <h1>Cuong ♥ Ai</h1>
+    <div class="card__social">
+        <div class="icon facebook">
+        <a target="_black" href="https://www.facebook.com/profile.php?id=100078757726680">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a target="_black" href="https://www.facebook.com/profile.php?id=100061480642286">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+            <span class="tooltip">Facebook</span>
+        </div>
+      </div>
+    </div>
+</div>
+<div class="card">
+    <div class="card_img">
+        <img src="TvsT.jpg" alt="">  
+    </div>
+    <h1>|____________|</h1>
+    <h1>Thanh ♥ Trang</h1>
+    <div class="card__social">
+        <div class="icon facebook">
+        <a target="_black" href="https://www.facebook.com/profile.php?id=100083738352087">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a target="_black" href="https://www.facebook.com/profile.php?id=100080773991052">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+            <span class="tooltip">Facebook</span>
+        </div>
+      </div>
+    </div>
+</div>
+<div class="card">
+    <div class="card_img">
+        <img src="HvsT.jpg" alt="">  
+    </div>
+    <h1>|____________|</h1>
+    <h1>Huy ♥ Trang</h1>
+    <div class="card__social">
+            <div class="icon facebook">
+                <a target="_black" href="https://www.facebook.com/profile.php?id=100053832574484">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                  <a target="_black" href="https://www.facebook.com/huyenchang1105">
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
+                <span class="tooltip">Facebook</span>
+            </div>
+          </div>
+        </div>       
+</div>
+</body>
+</html>
+<style>:root {
+	--primary-color:#f2726a;
+		--facebook-color: #3b5999;
+		--instagram-color: #e1306c;
+		--youtube-color: #de463b;
+		--twitter-color: #46c1f6;
+		--github-color: #333;
+	}
+
+body {
+	height: 100vh;
+	background-color: aquamarine;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Sono', sans-serif;
+}
+
+.card {
+	width: 550px;
+	height: 700px;
+	border-radius: 10px;
+	text-align: center;
+	background-color:white;
+	overflow: hidden;
+	margin: 0 30px;
+ 
+}
+img{
+	width: 300px;
+	height: 300px;
+	border-radius: 300px;
+	text-align: center;
+}
+
+.card_img {
+	width: 300px;
+	height: 300px;
+	margin: 0 auto;
+	transform: translateY(25px);
+	border-radius: 300px;
+	border: 4px solid var(--primary-color);
+	object-position: center;
+  }
+.card__social a {
+	text-decoration: none;
+	color: black;
+	margin: 25px 20px 40px;
+	display: inline-block;
+	font-size: 18px;
+	transition: 0.25s;
+  }
+  
+  .card__social a:hover {
+	color:var(--primary-color);
+  }
+  
+.wrapper {
+	display: flex;
+}
+
+.icon {
+	margin: 0 20px;
+	cursor: pointer;
+	position: relative;
+}
+
+.icon i {
+	height: 60px;
+	width: 60px;
+	border-radius: 50%;
+	background:#46c1f6;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+	font-size: 25px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.icon .tooltip {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	color: rgb(192, 181, 181);
+	padding: 10px 18px;
+	font-size: 20px;
+	font-weight: 500;
+	border-radius: 25px;
+	opacity: 0;
+	pointer-events: none;
+	box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.icon .tooltip:before {
+	position: absolute;
+	content: '';
+	height: 15px;
+	width: 15px;
+	left: 50%;
+	bottom: -6px;
+	transform: translateX(-50%) rotate(45deg);
+}
+
+.tooltip,
+.icon i {
+	transition: 0.3s;
+}
+
+.icon:hover .tooltip {
+	opacity: 1;
+	pointer-events: auto;
+	top: -70px;
+}
+
+.icon:hover i {
+	color: rgb(173, 173, 173);
+}
+
+.facebook .tooltip:before,
+.facebook:hover i,
+.facebook .tooltip {
+	background: var(--facebook-color);
+}
+  </style>
